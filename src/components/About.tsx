@@ -68,7 +68,7 @@ function About() {
                 Email:
               </span>{" "}
               <span className="text-gray-700 font-medium">
-                nbraksha@email.com
+                nbraksha@gmail.com
               </span>
             </p>
 
@@ -111,3 +111,4 @@ function About() {
 
 
 export default About
+
