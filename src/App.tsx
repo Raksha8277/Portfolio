@@ -1,5 +1,3 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
-
 import Navbar from "./components/Navbar"
 
 import Hero from "./components/Hero"
@@ -12,31 +10,43 @@ import Contact from "./components/Contact"
 
 function App() {
   return (
-    <BrowserRouter>
+    <div>
 
       <Navbar />
 
-      <Routes>
+      <div className="pt-24 scroll-smooth">
 
-        {/* Home page */}
-        <Route path="/" element={<Hero />} />
+        <section id="home">
+          <Hero />
+        </section>
 
-        {/* Other pages */}
-        <Route path="/about" element={<About />} />
+        <section id="about">
+          <About />
+        </section>
 
-        <Route path="/skills" element={<Skills />} />
+        <section id="skills">
+          <Skills />
+        </section>
 
-        <Route path="/projects" element={<Projects />} />
+        <section id="projects">
+          <Projects />
+        </section>
 
-        <Route path="/education" element={<Education />} />
+        <section id="education">
+          <Education />
+        </section>
 
-        <Route path="/certificates" element={<Certificate />} />
+        <section id="certificates">
+          <Certificate />
+        </section>
 
-        <Route path="/contact" element={<Contact />} />
+        <section id="contact">
+          <Contact />
+        </section>
 
-      </Routes>
+      </div>
 
-    </BrowserRouter>
+    </div>
   )
 }
 
