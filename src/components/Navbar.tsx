@@ -1,5 +1,4 @@
 import { useState } from "react"
-import { Link } from "react-router-dom"
 
 function Navbar() {
 
@@ -10,29 +9,26 @@ function Navbar() {
 
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
-      
         <h1 className="text-xl font-bold">Portfolio</h1>
 
-      
         <div className="hidden md:flex gap-8 font-medium">
 
-          <Link to="/" className="hover:text-blue-700">Home</Link>
+          <a href="#home" className="hover:text-blue-700 transition">Home</a>
 
-          <Link to="/about" className="hover:text-blue-700">About</Link>
+          <a href="#about" className="hover:text-blue-700 transition">About</a>
 
-          <Link to="/skills" className="hover:text-blue-700">Skills</Link>
+          <a href="#skills" className="hover:text-blue-700 transition">Skills</a>
 
-          <Link to="/projects" className="hover:text-blue-700">Projects</Link>
+          <a href="#projects" className="hover:text-blue-700 transition">Projects</a>
 
-          <Link to="/education" className="hover:text-blue-700">Education</Link>
+          <a href="#education" className="hover:text-blue-700 transition">Education</a>
 
-          <Link to="/certificates" className="hover:text-blue-700">Certificates</Link>
+          <a href="#certificates" className="hover:text-blue-700 transition">Certificates</a>
 
-          <Link to="/contact" className="hover:text-blue-700">Contact</Link>
+          <a href="#contact" className="hover:text-blue-700 transition">Contact</a>
 
         </div>
 
-        
         <button
           className="md:hidden text-2xl"
           onClick={() => setIsOpen(!isOpen)}
@@ -42,23 +38,22 @@ function Navbar() {
 
       </div>
 
-      
       {isOpen && (
         <div className="md:hidden flex flex-col gap-4 px-6 pb-4 font-medium bg-blue-200/90 backdrop-blur-md">
 
-          <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
+          <a href="#home" onClick={() => setIsOpen(false)}>Home</a>
 
-          <Link to="/about" onClick={() => setIsOpen(false)}>About</Link>
+          <a href="#about" onClick={() => setIsOpen(false)}>About</a>
 
-          <Link to="/skills" onClick={() => setIsOpen(false)}>Skills</Link>
+          <a href="#skills" onClick={() => setIsOpen(false)}>Skills</a>
 
-          <Link to="/projects" onClick={() => setIsOpen(false)}>Projects</Link>
+          <a href="#projects" onClick={() => setIsOpen(false)}>Projects</a>
 
-          <Link to="/education" onClick={() => setIsOpen(false)}>Education</Link>
+          <a href="#education" onClick={() => setIsOpen(false)}>Education</a>
 
-          <Link to="/certificates" onClick={() => setIsOpen(false)}>Certificates</Link>
+          <a href="#certificates" onClick={() => setIsOpen(false)}>Certificates</a>
 
-          <Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
+          <a href="#contact" onClick={() => setIsOpen(false)}>Contact</a>
 
         </div>
       )}
@@ -68,3 +63,4 @@ function Navbar() {
 }
 
 export default Navbar
+
