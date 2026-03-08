@@ -34,7 +34,7 @@ function Projects() {
 
           <button className="bg-blue-500 text-white px-5 py-2 rounded-lg hover:bg-blue-600 transition">
             <a
-            href="https://github.com/Raksha8277/Life-Insurance-Premium-Prediction"
+            href="https://github.com/Raksha8277/Life-Insurance-Prediction"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -83,5 +83,6 @@ function Projects() {
     </section>
   )
 }
+
 
 export default Projects
