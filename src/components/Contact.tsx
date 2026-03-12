@@ -11,10 +11,10 @@ function Contact() {
         <p className="mb-4">
           <span className="font-semibold text-gray-700">Email:</span><br />
           <a
-            href="mailto:nbraksha@email.com"
+            href="mailto:nbraksha@gmail.com"
             className="text-blue-500 hover:underline"
           >
-            nbraksha@email.com
+            nbraksha@gmail.com
           </a>
         </p>
 
@@ -36,7 +36,7 @@ function Contact() {
             rel="noopener noreferrer"
             className="text-blue-500 hover:underline"
           >
-            linkedin.com/in/YOUR-LINKEDIN-USERNAME
+            linkedin.com/in/raksha
           </a>
         </p>
 
@@ -57,5 +57,6 @@ function Contact() {
     </section>
   )
 }
+
 
 export default Contact
